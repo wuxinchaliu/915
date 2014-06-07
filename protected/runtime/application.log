@@ -1,0 +1,16 @@
+2014/06/07 06:49:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "admin/default/index".' in F:\apps\it915\framework\web\CWebApplication.php:286
+Stack trace:
+#0 F:\apps\it915\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/default/i...')
+#1 F:\apps\it915\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 F:\apps\it915\htdocs\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php?r=admin/default/index
+---
+2014/06/07 06:54:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "admin/".' in F:\apps\it915\framework\web\CWebApplication.php:286
+Stack trace:
+#0 F:\apps\it915\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/')
+#1 F:\apps\it915\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 F:\apps\it915\htdocs\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php?r=admin/
+---
