@@ -1,5 +1,4 @@
-<?php /* @var $this Controller */ ?>
-<?php $this->beginContent('//layouts/main'); ?>
+<?php $this->beginContent('application.modules.admin.views.layouts.main'); ?>
 <div id="content">
     <?php
     if (Yii::app()->user->hasFlash('success'))

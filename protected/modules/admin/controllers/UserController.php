@@ -9,7 +9,7 @@ class UserController extends Controller
 {
     //public $layout = 'application.modules.admin.views.layouts.main';
     public $defaultController = 'login';
-    public  $layout = 'application.modules.admin.views.layouts.column1';
+ //   public  $layout = 'application.modules.admin.views.layouts.column1';
     public function actions()
     {
         return array(

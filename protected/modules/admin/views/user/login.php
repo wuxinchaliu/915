@@ -3,17 +3,18 @@
 ?>
 
 <?php
-/*
 $form = $this->beginWidget('bootstrap.widgets.TbActiveForm', array(
     'id' => 'verticalForm',
+    'class' => 'form-signin',
     'htmlOptions' => array('class'=>'well'),
 ));
-echo $form->textFieldRow($model, 'textField', array('class'=>'span3'));
-echo $form->passwordFieldRow($model, 'password', array('class'=>'span3'));
-echo $form->checkboxRow($model, 'checkbox');
-echo $this->widget('bootstrap.widgets.TbButton', array('buttonType'=>'submit', 'label'=>'login'));
-*/
 ?>
+<?php echo $form->textFieldRow($model, 'username', array('class'=>'form-control','placeholder'=>"Email address"));?>
+<?php echo $form->passwordFieldRow($model, 'password', array('class'=>'form-control', 'placeholder'=>"Password"));?>
+<?php echo $form->checkboxRow($model, 'checkbox');?>
+<?php  $this->widget('bootstrap.widgets.TbButton', array('buttonType'=>'submit', 'label'=>'login'));?>
+<?php $this->endWidget(); ?>
+
 <div class="container">
 
     <form class="form-signin" role="form">

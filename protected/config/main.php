@@ -55,11 +55,6 @@ return array(
 		),
         'bootstrap'=>array(
             'class'=>'ext.bootstrap.components.Bootstrap',
-            'coreCss'=>false,
-            'responsiveCss' => false,
-            'yiiCss'=>false,
-            'jqueryCss'=>false,
-            'enableJS'=>false,
         ),
 		'errorHandler'=>array(
 			// use 'site/error' action to display errors
