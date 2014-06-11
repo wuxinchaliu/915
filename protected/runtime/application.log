@@ -460,3 +460,143 @@ Stack trace:
 #17 {main}
 REQUEST_URI=/admin/user/login
 ---
+2014/06/10 13:55:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "css/form.css"。' in F:\apps\915\framework\web\CWebApplication.php:286
+Stack trace:
+#0 F:\apps\915\framework\web\CWebApplication.php(141): CWebApplication->runController('css/form.css')
+#1 F:\apps\915\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 F:\apps\915\htdocs\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/form.css
+HTTP_REFERER=http://127.0.0.2/
+---
+2014/06/10 13:55:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in F:\apps\915\framework\web\CWebApplication.php:286
+Stack trace:
+#0 F:\apps\915\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 F:\apps\915\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 F:\apps\915\htdocs\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2014/06/10 13:55:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in F:\apps\915\framework\web\CWebApplication.php:286
+Stack trace:
+#0 F:\apps\915\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 F:\apps\915\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 F:\apps\915\htdocs\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2014/06/10 13:55:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in F:\apps\915\framework\web\CWebApplication.php:286
+Stack trace:
+#0 F:\apps\915\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 F:\apps\915\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 F:\apps\915\htdocs\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2014/06/10 13:56:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "admin" 动作.' in F:\apps\915\framework\web\CController.php:483
+Stack trace:
+#0 F:\apps\915\framework\web\CController.php(270): CController->missingAction('admin')
+#1 F:\apps\915\framework\web\CWebApplication.php(282): CController->run('admin')
+#2 F:\apps\915\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/user/admi...')
+#3 F:\apps\915\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 F:\apps\915\htdocs\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/admin/user/admin/user/login
+---
+2014/06/10 13:56:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "css/form.css"。' in F:\apps\915\framework\web\CWebApplication.php:286
+Stack trace:
+#0 F:\apps\915\framework\web\CWebApplication.php(141): CWebApplication->runController('css/form.css')
+#1 F:\apps\915\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 F:\apps\915\htdocs\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/form.css
+HTTP_REFERER=http://127.0.0.2/admin/user/admin/user/login
+---
+2014/06/10 13:56:29 [error] [exception.CException] exception 'CException' with message '属性 "TbActiveForm.class" 未被定义.' in F:\apps\915\framework\base\CComponent.php:173
+Stack trace:
+#0 F:\apps\915\framework\web\CWidgetFactory.php(161): CComponent->__set('class', 'form-signin')
+#1 F:\apps\915\framework\web\CBaseController.php(146): CWidgetFactory->createWidget(Object(UserController), 'bootstrap.widge...', Array)
+#2 F:\apps\915\framework\web\CBaseController.php(189): CBaseController->createWidget('bootstrap.widge...', Array)
+#3 F:\apps\915\protected\modules\admin\views\user\login.php(10): CBaseController->beginWidget('bootstrap.widge...', Array)
+#4 F:\apps\915\framework\web\CBaseController.php(126): require('F:\apps\915\pro...')
+#5 F:\apps\915\framework\web\CBaseController.php(95): CBaseController->renderInternal('F:\apps\915\pro...', Array, true)
+#6 F:\apps\915\framework\web\CController.php(869): CBaseController->renderFile('F:\apps\915\pro...', Array, true)
+#7 F:\apps\915\framework\web\CController.php(782): CController->renderPartial('login', Array, true)
+#8 F:\apps\915\protected\modules\admin\controllers\UserController.php(94): CController->render('login', Array)
+#9 F:\apps\915\framework\web\actions\CInlineAction.php(49): UserController->actionLogin()
+#10 F:\apps\915\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#11 F:\apps\915\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#12 F:\apps\915\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 F:\apps\915\framework\web\CWebApplication.php(282): CController->run('login')
+#14 F:\apps\915\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/user/logi...')
+#15 F:\apps\915\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#16 F:\apps\915\htdocs\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/admin/user/login
+---
+2014/06/10 13:56:34 [error] [exception.CException] exception 'CException' with message '属性 "TbActiveForm.class" 未被定义.' in F:\apps\915\framework\base\CComponent.php:173
+Stack trace:
+#0 F:\apps\915\framework\web\CWidgetFactory.php(161): CComponent->__set('class', 'form-signin')
+#1 F:\apps\915\framework\web\CBaseController.php(146): CWidgetFactory->createWidget(Object(UserController), 'bootstrap.widge...', Array)
+#2 F:\apps\915\framework\web\CBaseController.php(189): CBaseController->createWidget('bootstrap.widge...', Array)
+#3 F:\apps\915\protected\modules\admin\views\user\login.php(10): CBaseController->beginWidget('bootstrap.widge...', Array)
+#4 F:\apps\915\framework\web\CBaseController.php(126): require('F:\apps\915\pro...')
+#5 F:\apps\915\framework\web\CBaseController.php(95): CBaseController->renderInternal('F:\apps\915\pro...', Array, true)
+#6 F:\apps\915\framework\web\CController.php(869): CBaseController->renderFile('F:\apps\915\pro...', Array, true)
+#7 F:\apps\915\framework\web\CController.php(782): CController->renderPartial('login', Array, true)
+#8 F:\apps\915\protected\modules\admin\controllers\UserController.php(94): CController->render('login', Array)
+#9 F:\apps\915\framework\web\actions\CInlineAction.php(49): UserController->actionLogin()
+#10 F:\apps\915\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#11 F:\apps\915\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#12 F:\apps\915\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 F:\apps\915\framework\web\CWebApplication.php(282): CController->run('login')
+#14 F:\apps\915\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/user/logi...')
+#15 F:\apps\915\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#16 F:\apps\915\htdocs\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/admin/user/login
+---
+2014/06/10 13:58:49 [error] [exception.CException] exception 'CException' with message '属性 "TbActiveForm.class" 未被定义.' in F:\apps\915\framework\base\CComponent.php:173
+Stack trace:
+#0 F:\apps\915\framework\web\CWidgetFactory.php(161): CComponent->__set('class', 'form-signin')
+#1 F:\apps\915\framework\web\CBaseController.php(146): CWidgetFactory->createWidget(Object(UserController), 'bootstrap.widge...', Array)
+#2 F:\apps\915\framework\web\CBaseController.php(189): CBaseController->createWidget('bootstrap.widge...', Array)
+#3 F:\apps\915\protected\modules\admin\views\user\login.php(10): CBaseController->beginWidget('bootstrap.widge...', Array)
+#4 F:\apps\915\framework\web\CBaseController.php(126): require('F:\apps\915\pro...')
+#5 F:\apps\915\framework\web\CBaseController.php(95): CBaseController->renderInternal('F:\apps\915\pro...', Array, true)
+#6 F:\apps\915\framework\web\CController.php(869): CBaseController->renderFile('F:\apps\915\pro...', Array, true)
+#7 F:\apps\915\framework\web\CController.php(782): CController->renderPartial('login', Array, true)
+#8 F:\apps\915\protected\modules\admin\controllers\UserController.php(94): CController->render('login', Array)
+#9 F:\apps\915\framework\web\actions\CInlineAction.php(49): UserController->actionLogin()
+#10 F:\apps\915\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#11 F:\apps\915\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#12 F:\apps\915\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 F:\apps\915\framework\web\CWebApplication.php(282): CController->run('login')
+#14 F:\apps\915\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/user/logi...')
+#15 F:\apps\915\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#16 F:\apps\915\htdocs\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/admin/user/login
+---
+2014/06/10 13:58:52 [error] [exception.CException] exception 'CException' with message '属性 "TbActiveForm.class" 未被定义.' in F:\apps\915\framework\base\CComponent.php:173
+Stack trace:
+#0 F:\apps\915\framework\web\CWidgetFactory.php(161): CComponent->__set('class', 'form-signin')
+#1 F:\apps\915\framework\web\CBaseController.php(146): CWidgetFactory->createWidget(Object(UserController), 'bootstrap.widge...', Array)
+#2 F:\apps\915\framework\web\CBaseController.php(189): CBaseController->createWidget('bootstrap.widge...', Array)
+#3 F:\apps\915\protected\modules\admin\views\user\login.php(10): CBaseController->beginWidget('bootstrap.widge...', Array)
+#4 F:\apps\915\framework\web\CBaseController.php(126): require('F:\apps\915\pro...')
+#5 F:\apps\915\framework\web\CBaseController.php(95): CBaseController->renderInternal('F:\apps\915\pro...', Array, true)
+#6 F:\apps\915\framework\web\CController.php(869): CBaseController->renderFile('F:\apps\915\pro...', Array, true)
+#7 F:\apps\915\framework\web\CController.php(782): CController->renderPartial('login', Array, true)
+#8 F:\apps\915\protected\modules\admin\controllers\UserController.php(94): CController->render('login', Array)
+#9 F:\apps\915\framework\web\actions\CInlineAction.php(49): UserController->actionLogin()
+#10 F:\apps\915\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#11 F:\apps\915\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#12 F:\apps\915\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 F:\apps\915\framework\web\CWebApplication.php(282): CController->run('login')
+#14 F:\apps\915\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/user/logi...')
+#15 F:\apps\915\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#16 F:\apps\915\htdocs\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/admin/user/login
+---
