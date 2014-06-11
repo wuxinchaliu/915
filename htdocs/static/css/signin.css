@@ -3,7 +3,13 @@
   padding-bottom: 40px;
   background-color: #eee;
 }
-
+.form-signin-heading{
+    text-align: center;
+    color:#888;
+    font-size:26px;
+    font-weight:bold;
+    margin-top: 10px;
+}
 .form-signin {
   max-width: 330px;
   padding: 15px;
@@ -37,4 +43,20 @@
   margin-bottom: 10px;
   border-top-left-radius: 0;
   border-top-right-radius: 0;
+}
+
+label{
+    display: none;
+}
+.form-signin .verify-code{
+    width:85px;
+    height:35px;
+}
+.form-signin .cpatcha-img{
+    width:110px;
+    height:40px;
+    margin-left:15px;
+}
+.form-signin .btn{
+    font-weight: bold;
 }
