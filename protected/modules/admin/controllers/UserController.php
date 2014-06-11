@@ -7,7 +7,6 @@
 
 class UserController extends Controller
 {
-    //public $layout = 'application.modules.admin.views.layouts.main';
     public $defaultController = 'login';
  //   public  $layout = 'application.modules.admin.views.layouts.column1';
     public function actions()
@@ -54,7 +53,7 @@ class UserController extends Controller
     public function actionIndex()
     {
         if (yii::app()->user->isGuest){
-            $this->redirect('admin/user/login');
+            $this->redirect('/user/login');
         }
         $this->renderPartial('frame');
     }
