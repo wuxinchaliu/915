@@ -1,16 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0af7802f-34f9-4238-be44-69e536dd938b" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/models/UserLoginLog.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/helpers/Utils.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/models/User.php" afterPath="$PROJECT_DIR$/protected/models/User.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/modules/admin/controllers/UserController.php" afterPath="$PROJECT_DIR$/protected/modules/admin/controllers/UserController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/components/UserIdentity.php" afterPath="$PROJECT_DIR$/protected/components/UserIdentity.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/runtime/application.log" afterPath="$PROJECT_DIR$/protected/runtime/application.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/config/main.php" afterPath="$PROJECT_DIR$/protected/config/main.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="0af7802f-34f9-4238-be44-69e536dd938b" name="Default" comment="" />
     <ignored path="915.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -35,7 +26,7 @@
       <file leaf-file-name="login.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/protected/modules/admin/views/user/login.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="22" selection-start="345" selection-end="345" vertical-scroll-proportion="-10.0" vertical-offset="0" max-vertical-offset="1120">
+            <state line="13" column="22" selection-start="345" selection-end="345" vertical-scroll-proportion="0.0" vertical-offset="260" max-vertical-offset="1120">
               <folding />
             </state>
           </provider>
@@ -44,7 +35,7 @@
       <file leaf-file-name="main.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/protected/config/main.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="32" selection-start="685" selection-end="685" vertical-scroll-proportion="-11.0" vertical-offset="94" max-vertical-offset="1860">
+            <state line="19" column="32" selection-start="685" selection-end="685" vertical-scroll-proportion="0.0" vertical-offset="94" max-vertical-offset="1860">
               <folding />
             </state>
           </provider>
@@ -53,7 +44,7 @@
       <file leaf-file-name="LoginForm.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/protected/models/LoginForm.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="57" column="46" selection-start="1655" selection-end="1655" vertical-scroll-proportion="-13.307693" vertical-offset="794" max-vertical-offset="1760">
+            <state line="57" column="46" selection-start="1655" selection-end="1655" vertical-scroll-proportion="0.0" vertical-offset="1140" max-vertical-offset="1760">
               <folding />
             </state>
           </provider>
@@ -62,7 +53,7 @@
       <file leaf-file-name="UserIdentity.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/protected/components/UserIdentity.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="51" column="59" selection-start="2099" selection-end="2099" vertical-scroll-proportion="0.6622889" vertical-offset="667" max-vertical-offset="1200">
+            <state line="51" column="59" selection-start="2099" selection-end="2099" vertical-scroll-proportion="0.77110696" vertical-offset="609" max-vertical-offset="1200">
               <folding />
             </state>
           </provider>
@@ -71,10 +62,8 @@
       <file leaf-file-name="UserLoginLog.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/protected/models/UserLoginLog.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="29" column="31" selection-start="537" selection-end="548" vertical-scroll-proportion="-11.769231" vertical-offset="274" max-vertical-offset="940">
-              <folding>
-                <element signature="e#6#81#0" expanded="true" />
-              </folding>
+            <state line="29" column="31" selection-start="537" selection-end="548" vertical-scroll-proportion="0.0" vertical-offset="274" max-vertical-offset="940">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -82,7 +71,7 @@
       <file leaf-file-name="User.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/protected/models/User.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="39" column="5" selection-start="696" selection-end="696" vertical-scroll-proportion="-22.307692" vertical-offset="120" max-vertical-offset="880">
+            <state line="39" column="5" selection-start="696" selection-end="696" vertical-scroll-proportion="0.0" vertical-offset="780" max-vertical-offset="960">
               <folding />
             </state>
           </provider>
@@ -91,7 +80,7 @@
       <file leaf-file-name="Utils.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/protected/helpers/Utils.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="20" selection-start="318" selection-end="318" vertical-scroll-proportion="17.692308" vertical-offset="720" max-vertical-offset="2680">
+            <state line="13" column="20" selection-start="318" selection-end="318" vertical-scroll-proportion="0.0" vertical-offset="720" max-vertical-offset="2680">
               <folding />
             </state>
           </provider>
@@ -100,7 +89,7 @@
       <file leaf-file-name="UserController.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/protected/modules/admin/controllers/UserController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="98" column="32" selection-start="2406" selection-end="2406" vertical-scroll-proportion="-18.692308" vertical-offset="1394" max-vertical-offset="2120">
+            <state line="98" column="32" selection-start="2406" selection-end="2406" vertical-scroll-proportion="0.0" vertical-offset="1960" max-vertical-offset="2200">
               <folding />
             </state>
           </provider>
@@ -338,7 +327,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="更改" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="17" side_tool="false" content_ui="tabs" />
       <window_info id="运行" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
@@ -347,7 +336,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.329429" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24963397" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21223564" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2152568" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="调试" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="16" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32970452" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -355,8 +344,8 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="REST Client" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32970452" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32970452" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -510,9 +499,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/framework/yiilite.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3498" column="6" selection-start="104123" selection-end="104123" vertical-scroll-proportion="0.9509091" vertical-offset="75993" max-vertical-offset="228602">
-          <folding />
-        </state>
+        <state line="3498" column="6" selection-start="104123" selection-end="104123" vertical-scroll-proportion="0.9509091" vertical-offset="75993" max-vertical-offset="228602" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/protected/.htaccess">
@@ -627,58 +614,56 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/protected/modules/admin/views/user/login.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="22" selection-start="345" selection-end="345" vertical-scroll-proportion="-10.0" vertical-offset="0" max-vertical-offset="1120">
+        <state line="13" column="22" selection-start="345" selection-end="345" vertical-scroll-proportion="0.0" vertical-offset="260" max-vertical-offset="1120">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/protected/config/main.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="32" selection-start="685" selection-end="685" vertical-scroll-proportion="-11.0" vertical-offset="94" max-vertical-offset="1860">
+        <state line="19" column="32" selection-start="685" selection-end="685" vertical-scroll-proportion="0.0" vertical-offset="94" max-vertical-offset="1860">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/protected/models/LoginForm.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="57" column="46" selection-start="1655" selection-end="1655" vertical-scroll-proportion="-13.307693" vertical-offset="794" max-vertical-offset="1760">
+        <state line="57" column="46" selection-start="1655" selection-end="1655" vertical-scroll-proportion="0.0" vertical-offset="1140" max-vertical-offset="1760">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/protected/helpers/Utils.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="20" selection-start="318" selection-end="318" vertical-scroll-proportion="17.692308" vertical-offset="720" max-vertical-offset="2680">
+        <state line="13" column="20" selection-start="318" selection-end="318" vertical-scroll-proportion="0.0" vertical-offset="720" max-vertical-offset="2680">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/protected/models/User.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="5" selection-start="696" selection-end="696" vertical-scroll-proportion="-22.307692" vertical-offset="120" max-vertical-offset="880">
+        <state line="39" column="5" selection-start="696" selection-end="696" vertical-scroll-proportion="0.0" vertical-offset="780" max-vertical-offset="960">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/protected/modules/admin/controllers/UserController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="98" column="32" selection-start="2406" selection-end="2406" vertical-scroll-proportion="-18.692308" vertical-offset="1394" max-vertical-offset="2120">
+        <state line="98" column="32" selection-start="2406" selection-end="2406" vertical-scroll-proportion="0.0" vertical-offset="1960" max-vertical-offset="2200">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/protected/models/UserLoginLog.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="31" selection-start="537" selection-end="548" vertical-scroll-proportion="-11.769231" vertical-offset="274" max-vertical-offset="940">
-          <folding>
-            <element signature="e#6#81#0" expanded="true" />
-          </folding>
+        <state line="29" column="31" selection-start="537" selection-end="548" vertical-scroll-proportion="0.0" vertical-offset="274" max-vertical-offset="940">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/protected/components/UserIdentity.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="51" column="59" selection-start="2099" selection-end="2099" vertical-scroll-proportion="0.6622889" vertical-offset="667" max-vertical-offset="1200">
+        <state line="51" column="59" selection-start="2099" selection-end="2099" vertical-scroll-proportion="0.77110696" vertical-offset="609" max-vertical-offset="1200">
           <folding />
         </state>
       </provider>
