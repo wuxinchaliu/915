@@ -45,9 +45,7 @@
   border-top-right-radius: 0;
 }
 
-label{
-    display: none;
-}
+label{display: none;}
 .form-signin .verify-code{
     width:85px;
     height:35px;

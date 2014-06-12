@@ -14,7 +14,7 @@ class UserController extends Controller
         return array(
             'captcha' => array(
                 'class' => 'CCaptchaAction',
-                'backColor' => 0xF5F5F5,
+                'backColor' => 0xFFFFFF,
                 'maxLength' => 4,
                 'minLength' => 4,
                 'height' => rand(48, 50),

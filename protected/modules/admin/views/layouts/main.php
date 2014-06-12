@@ -5,18 +5,11 @@
     <title><?php echo CHtml::encode($this->pageTitle); ?></title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="it915">
-    <meta name="author" content="wuxinchaliu">
-    <?php Yii::app()->bootstrap->register();?>
-    <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/static/bootstrap/css/bootstrap.min.css" />
-    <?php
-        if (yii::app()->controller->id == 'user' && $this->getAction()->getId() == 'login'){
-            echo '<link rel="stylesheet" type="text/css" href="'.Yii::app()->request->baseUrl.'/static/css/signin.css" />';
-        }
-    ?>
-    <!--[if lt IE 8]>
-    <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/ie.css" media="screen, projection" />
-    <![endif]-->
+    <meta name="author" content="qilin">
 
+    <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/static/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/static/font-awesome/css/font-awesome.css" />
+    <link href="<?php echo Yii::app()->request->baseUrl; ?>/static/css/sb-admin.css" rel="stylesheet">
 </head>
 
 <body>
@@ -33,6 +26,9 @@
     <?php echo $content;?>
 </div>
 
+<script src="<?php echo Yii::app()->request->baseUrl; ?>/static/js/jquery-1.10.2.js"></script>
 <script src="<?php echo Yii::app()->request->baseUrl; ?>/static/bootstrap/js/bootstrap.min.js"></script>
+<script src="<?php echo Yii::app()->request->baseUrl; ?>/static/js/plugins/metisMenu/jquery.metisMenu.js"></script>
+<script src="<?php echo Yii::app()->request->baseUrl; ?>/static/js/sb-admin.js"></script>
 </body>
 </html>
