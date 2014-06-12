@@ -94,12 +94,21 @@ class UserController extends Controller
     }
 
     /**
+     *
+     */
+    public function actionLogout()
+    {
+        yii::app()->user->logout();
+        $this->redirect('login');
+    }
+
+    /**
      * edit user
      */
     public function actionEdit()
     {
         $model = new LoginForm();
-
+        echo Utils::pbkdf2('sha256', 'admin', '9izq', 10000);exit;
         $this->render('edit', array('model'=>$model));
     }
 } 

@@ -29,14 +29,15 @@ class UserLoginLog extends CActiveRecord{
      */
     public function addLoginLog($loginLog)
     {
-        $this->attributes = array(
+        $userLog = new UserLoginLog();
+        $userLog->attributes = array(
             'user_id' => $loginLog['user_id'],
             'username' => $loginLog['username'],
             'login_result' => $loginLog['login_result'],
             'login_time' => $loginLog['login_time'],
-            'login_ip' => $_SERVER['remote_ip'],
-            'user_agent' => $_SERVER['user_agent'],
+            'login_ip' => yii::app()->request->userHostAddress,
+            'user_agent' => yii::app()->request->userAgent,
         );
-        return $this->save();
+        return $userLog->save();
     }
 } 

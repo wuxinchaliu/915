@@ -61,3 +61,279 @@ Stack trace:
 #17 {main}
 REQUEST_URI=/admin/user/login
 ---
+2014/06/12 08:02:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in F:\apps\915\framework\web\CWebApplication.php:286
+Stack trace:
+#0 F:\apps\915\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 F:\apps\915\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 F:\apps\915\htdocs\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2014/06/12 08:02:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in F:\apps\915\framework\web\CWebApplication.php:286
+Stack trace:
+#0 F:\apps\915\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 F:\apps\915\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 F:\apps\915\htdocs\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2014/06/12 08:05:47 [error] [php] Undefined index: remote_ip (F:\apps\915\protected\models\UserLoginLog.php:37)
+Stack trace:
+#0 F:\apps\915\framework\validators\CInlineValidator.php(42): LoginForm->authenticate()
+#1 F:\apps\915\framework\validators\CValidator.php(213): CInlineValidator->validateAttribute()
+#2 F:\apps\915\framework\base\CModel.php(159): CInlineValidator->validate()
+#3 F:\apps\915\protected\modules\admin\controllers\UserController.php(89): LoginForm->validate()
+#4 F:\apps\915\framework\web\actions\CInlineAction.php(49): UserController->actionLogin()
+#5 F:\apps\915\framework\web\CController.php(308): CInlineAction->runWithParams()
+#6 F:\apps\915\framework\web\CController.php(286): UserController->runAction()
+#7 F:\apps\915\framework\web\CController.php(265): UserController->runActionWithFilters()
+#8 F:\apps\915\framework\web\CWebApplication.php(282): UserController->run()
+#9 F:\apps\915\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#10 F:\apps\915\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 F:\apps\915\htdocs\index.php(13): CWebApplication->run()
+REQUEST_URI=/admin/user/login
+in F:\apps\915\protected\models\UserLoginLog.php (37)
+in F:\apps\915\protected\components\UserIdentity.php (52)
+in F:\apps\915\protected\models\LoginForm.php (57)
+2014/06/12 08:32:10 [error] [exception.CException] exception 'CException' with message '属性 "UserIdentity.attributes" 未被定义.' in F:\apps\915\framework\base\CComponent.php:173
+Stack trace:
+#0 F:\apps\915\protected\models\UserLoginLog.php(32): CComponent->__set('attributes', Array)
+#1 F:\apps\915\protected\components\UserIdentity.php(52): UserLoginLog->addLoginLog(Array)
+#2 F:\apps\915\protected\models\LoginForm.php(57): UserIdentity->authenticate()
+#3 F:\apps\915\framework\validators\CInlineValidator.php(42): LoginForm->authenticate('password', Array)
+#4 F:\apps\915\framework\validators\CValidator.php(213): CInlineValidator->validateAttribute(Object(LoginForm), 'password')
+#5 F:\apps\915\framework\base\CModel.php(159): CValidator->validate(Object(LoginForm), NULL)
+#6 F:\apps\915\protected\modules\admin\controllers\UserController.php(89): CModel->validate()
+#7 F:\apps\915\framework\web\actions\CInlineAction.php(49): UserController->actionLogin()
+#8 F:\apps\915\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 F:\apps\915\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 F:\apps\915\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 F:\apps\915\framework\web\CWebApplication.php(282): CController->run('login')
+#12 F:\apps\915\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/user/logi...')
+#13 F:\apps\915\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#14 F:\apps\915\htdocs\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/admin/user/login
+HTTP_REFERER=http://127.0.0.2/admin/user/login
+---
+2014/06/12 08:32:24 [error] [php] Trying to get property of non-object (F:\apps\915\protected\components\UserIdentity.php:28)
+Stack trace:
+#0 F:\apps\915\framework\validators\CValidator.php(213): CInlineValidator->validateAttribute()
+#1 F:\apps\915\framework\base\CModel.php(159): CInlineValidator->validate()
+#2 F:\apps\915\protected\modules\admin\controllers\UserController.php(89): LoginForm->validate()
+#3 F:\apps\915\framework\web\actions\CInlineAction.php(49): UserController->actionLogin()
+#4 F:\apps\915\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 F:\apps\915\framework\web\CController.php(286): UserController->runAction()
+#6 F:\apps\915\framework\web\CController.php(265): UserController->runActionWithFilters()
+#7 F:\apps\915\framework\web\CWebApplication.php(282): UserController->run()
+#8 F:\apps\915\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 F:\apps\915\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 F:\apps\915\htdocs\index.php(13): CWebApplication->run()
+REQUEST_URI=/admin/user/login
+in F:\apps\915\protected\components\UserIdentity.php (28)
+in F:\apps\915\protected\models\LoginForm.php (57)
+in F:\apps\915\protected\modules\admin\controllers\UserController.php (89)
+2014/06/12 08:35:38 [error] [exception.CException] exception 'CException' with message '属性 "UserIdentity.attributes" 未被定义.' in F:\apps\915\framework\base\CComponent.php:173
+Stack trace:
+#0 F:\apps\915\protected\models\UserLoginLog.php(32): CComponent->__set('attributes', Array)
+#1 F:\apps\915\protected\components\UserIdentity.php(52): UserLoginLog->addLoginLog(Array)
+#2 F:\apps\915\protected\models\LoginForm.php(57): UserIdentity->authenticate()
+#3 F:\apps\915\framework\validators\CInlineValidator.php(42): LoginForm->authenticate('password', Array)
+#4 F:\apps\915\framework\validators\CValidator.php(213): CInlineValidator->validateAttribute(Object(LoginForm), 'password')
+#5 F:\apps\915\framework\base\CModel.php(159): CValidator->validate(Object(LoginForm), NULL)
+#6 F:\apps\915\protected\modules\admin\controllers\UserController.php(89): CModel->validate()
+#7 F:\apps\915\framework\web\actions\CInlineAction.php(49): UserController->actionLogin()
+#8 F:\apps\915\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 F:\apps\915\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 F:\apps\915\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 F:\apps\915\framework\web\CWebApplication.php(282): CController->run('login')
+#12 F:\apps\915\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/user/logi...')
+#13 F:\apps\915\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#14 F:\apps\915\htdocs\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/admin/user/login
+HTTP_REFERER=http://127.0.0.2/admin/user/login
+---
+2014/06/12 08:36:55 [warning] [application] Failed to set unsafe attribute "user_id" of "UserLoginLog".
+in F:\apps\915\protected\models\UserLoginLog.php (33)
+in F:\apps\915\protected\components\UserIdentity.php (52)
+in F:\apps\915\protected\models\LoginForm.php (57)
+2014/06/12 08:36:55 [warning] [application] Failed to set unsafe attribute "username" of "UserLoginLog".
+in F:\apps\915\protected\models\UserLoginLog.php (33)
+in F:\apps\915\protected\components\UserIdentity.php (52)
+in F:\apps\915\protected\models\LoginForm.php (57)
+2014/06/12 08:36:55 [warning] [application] Failed to set unsafe attribute "login_result" of "UserLoginLog".
+in F:\apps\915\protected\models\UserLoginLog.php (33)
+in F:\apps\915\protected\components\UserIdentity.php (52)
+in F:\apps\915\protected\models\LoginForm.php (57)
+2014/06/12 08:36:55 [warning] [application] Failed to set unsafe attribute "login_time" of "UserLoginLog".
+in F:\apps\915\protected\models\UserLoginLog.php (33)
+in F:\apps\915\protected\components\UserIdentity.php (52)
+in F:\apps\915\protected\models\LoginForm.php (57)
+2014/06/12 08:36:55 [warning] [application] Failed to set unsafe attribute "login_ip" of "UserLoginLog".
+in F:\apps\915\protected\models\UserLoginLog.php (33)
+in F:\apps\915\protected\components\UserIdentity.php (52)
+in F:\apps\915\protected\models\LoginForm.php (57)
+2014/06/12 08:36:55 [warning] [application] Failed to set unsafe attribute "user_agent" of "UserLoginLog".
+in F:\apps\915\protected\models\UserLoginLog.php (33)
+in F:\apps\915\protected\components\UserIdentity.php (52)
+in F:\apps\915\protected\models\LoginForm.php (57)
+2014/06/12 08:37:12 [warning] [application] Failed to set unsafe attribute "user_id" of "UserLoginLog".
+in F:\apps\915\protected\models\UserLoginLog.php (33)
+in F:\apps\915\protected\components\UserIdentity.php (52)
+in F:\apps\915\protected\models\LoginForm.php (57)
+2014/06/12 08:37:12 [warning] [application] Failed to set unsafe attribute "username" of "UserLoginLog".
+in F:\apps\915\protected\models\UserLoginLog.php (33)
+in F:\apps\915\protected\components\UserIdentity.php (52)
+in F:\apps\915\protected\models\LoginForm.php (57)
+2014/06/12 08:37:12 [warning] [application] Failed to set unsafe attribute "login_result" of "UserLoginLog".
+in F:\apps\915\protected\models\UserLoginLog.php (33)
+in F:\apps\915\protected\components\UserIdentity.php (52)
+in F:\apps\915\protected\models\LoginForm.php (57)
+2014/06/12 08:37:12 [warning] [application] Failed to set unsafe attribute "login_time" of "UserLoginLog".
+in F:\apps\915\protected\models\UserLoginLog.php (33)
+in F:\apps\915\protected\components\UserIdentity.php (52)
+in F:\apps\915\protected\models\LoginForm.php (57)
+2014/06/12 08:37:12 [warning] [application] Failed to set unsafe attribute "login_ip" of "UserLoginLog".
+in F:\apps\915\protected\models\UserLoginLog.php (33)
+in F:\apps\915\protected\components\UserIdentity.php (52)
+in F:\apps\915\protected\models\LoginForm.php (57)
+2014/06/12 08:37:12 [warning] [application] Failed to set unsafe attribute "user_agent" of "UserLoginLog".
+in F:\apps\915\protected\models\UserLoginLog.php (33)
+in F:\apps\915\protected\components\UserIdentity.php (52)
+in F:\apps\915\protected\models\LoginForm.php (57)
+2014/06/12 08:37:20 [warning] [application] Failed to set unsafe attribute "user_id" of "UserLoginLog".
+in F:\apps\915\protected\models\UserLoginLog.php (33)
+in F:\apps\915\protected\components\UserIdentity.php (52)
+in F:\apps\915\protected\models\LoginForm.php (57)
+2014/06/12 08:37:20 [warning] [application] Failed to set unsafe attribute "username" of "UserLoginLog".
+in F:\apps\915\protected\models\UserLoginLog.php (33)
+in F:\apps\915\protected\components\UserIdentity.php (52)
+in F:\apps\915\protected\models\LoginForm.php (57)
+2014/06/12 08:37:20 [warning] [application] Failed to set unsafe attribute "login_result" of "UserLoginLog".
+in F:\apps\915\protected\models\UserLoginLog.php (33)
+in F:\apps\915\protected\components\UserIdentity.php (52)
+in F:\apps\915\protected\models\LoginForm.php (57)
+2014/06/12 08:37:20 [warning] [application] Failed to set unsafe attribute "login_time" of "UserLoginLog".
+in F:\apps\915\protected\models\UserLoginLog.php (33)
+in F:\apps\915\protected\components\UserIdentity.php (52)
+in F:\apps\915\protected\models\LoginForm.php (57)
+2014/06/12 08:37:20 [warning] [application] Failed to set unsafe attribute "login_ip" of "UserLoginLog".
+in F:\apps\915\protected\models\UserLoginLog.php (33)
+in F:\apps\915\protected\components\UserIdentity.php (52)
+in F:\apps\915\protected\models\LoginForm.php (57)
+2014/06/12 08:37:20 [warning] [application] Failed to set unsafe attribute "user_agent" of "UserLoginLog".
+in F:\apps\915\protected\models\UserLoginLog.php (33)
+in F:\apps\915\protected\components\UserIdentity.php (52)
+in F:\apps\915\protected\models\LoginForm.php (57)
+2014/06/12 08:40:16 [warning] [application] Failed to set unsafe attribute "user_id" of "UserLoginLog".
+in F:\apps\915\protected\models\UserLoginLog.php (33)
+in F:\apps\915\protected\components\UserIdentity.php (52)
+in F:\apps\915\protected\models\LoginForm.php (57)
+2014/06/12 08:40:16 [warning] [application] Failed to set unsafe attribute "username" of "UserLoginLog".
+in F:\apps\915\protected\models\UserLoginLog.php (33)
+in F:\apps\915\protected\components\UserIdentity.php (52)
+in F:\apps\915\protected\models\LoginForm.php (57)
+2014/06/12 08:40:16 [warning] [application] Failed to set unsafe attribute "login_result" of "UserLoginLog".
+in F:\apps\915\protected\models\UserLoginLog.php (33)
+in F:\apps\915\protected\components\UserIdentity.php (52)
+in F:\apps\915\protected\models\LoginForm.php (57)
+2014/06/12 08:40:16 [warning] [application] Failed to set unsafe attribute "login_time" of "UserLoginLog".
+in F:\apps\915\protected\models\UserLoginLog.php (33)
+in F:\apps\915\protected\components\UserIdentity.php (52)
+in F:\apps\915\protected\models\LoginForm.php (57)
+2014/06/12 08:40:16 [warning] [application] Failed to set unsafe attribute "login_ip" of "UserLoginLog".
+in F:\apps\915\protected\models\UserLoginLog.php (33)
+in F:\apps\915\protected\components\UserIdentity.php (52)
+in F:\apps\915\protected\models\LoginForm.php (57)
+2014/06/12 08:40:16 [warning] [application] Failed to set unsafe attribute "user_agent" of "UserLoginLog".
+in F:\apps\915\protected\models\UserLoginLog.php (33)
+in F:\apps\915\protected\components\UserIdentity.php (52)
+in F:\apps\915\protected\models\LoginForm.php (57)
+2014/06/12 08:40:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "css/form.css"。' in F:\apps\915\framework\web\CWebApplication.php:286
+Stack trace:
+#0 F:\apps\915\framework\web\CWebApplication.php(141): CWebApplication->runController('css/form.css')
+#1 F:\apps\915\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 F:\apps\915\htdocs\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/form.css
+HTTP_REFERER=http://127.0.0.2/index.php
+---
+2014/06/12 08:40:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "css/form.css"。' in F:\apps\915\framework\web\CWebApplication.php:286
+Stack trace:
+#0 F:\apps\915\framework\web\CWebApplication.php(141): CWebApplication->runController('css/form.css')
+#1 F:\apps\915\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 F:\apps\915\htdocs\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/form.css
+HTTP_REFERER=http://127.0.0.2/index.php
+---
+2014/06/12 08:49:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "user" 动作.' in F:\apps\915\framework\web\CController.php:483
+Stack trace:
+#0 F:\apps\915\framework\web\CController.php(270): CController->missingAction('user')
+#1 F:\apps\915\framework\web\CWebApplication.php(282): CController->run('user')
+#2 F:\apps\915\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/user/user...')
+#3 F:\apps\915\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 F:\apps\915\htdocs\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/admin/user/user/login
+---
+2014/06/12 08:49:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "css/form.css"。' in F:\apps\915\framework\web\CWebApplication.php:286
+Stack trace:
+#0 F:\apps\915\framework\web\CWebApplication.php(141): CWebApplication->runController('css/form.css')
+#1 F:\apps\915\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 F:\apps\915\htdocs\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/form.css
+HTTP_REFERER=http://127.0.0.2/admin/user/user/login
+---
+2014/06/12 08:49:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "user/login"。' in F:\apps\915\framework\web\CWebApplication.php:286
+Stack trace:
+#0 F:\apps\915\framework\web\CWebApplication.php(141): CWebApplication->runController('user/login')
+#1 F:\apps\915\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 F:\apps\915\htdocs\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/user/login
+---
+2014/06/12 08:49:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "css/form.css"。' in F:\apps\915\framework\web\CWebApplication.php:286
+Stack trace:
+#0 F:\apps\915\framework\web\CWebApplication.php(141): CWebApplication->runController('css/form.css')
+#1 F:\apps\915\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 F:\apps\915\htdocs\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/form.css
+HTTP_REFERER=http://127.0.0.2/user/login
+---
+2014/06/12 08:49:59 [warning] [application] Failed to set unsafe attribute "user_id" of "UserLoginLog".
+in F:\apps\915\protected\models\UserLoginLog.php (33)
+in F:\apps\915\protected\components\UserIdentity.php (52)
+in F:\apps\915\protected\models\LoginForm.php (57)
+2014/06/12 08:49:59 [warning] [application] Failed to set unsafe attribute "username" of "UserLoginLog".
+in F:\apps\915\protected\models\UserLoginLog.php (33)
+in F:\apps\915\protected\components\UserIdentity.php (52)
+in F:\apps\915\protected\models\LoginForm.php (57)
+2014/06/12 08:49:59 [warning] [application] Failed to set unsafe attribute "login_result" of "UserLoginLog".
+in F:\apps\915\protected\models\UserLoginLog.php (33)
+in F:\apps\915\protected\components\UserIdentity.php (52)
+in F:\apps\915\protected\models\LoginForm.php (57)
+2014/06/12 08:49:59 [warning] [application] Failed to set unsafe attribute "login_time" of "UserLoginLog".
+in F:\apps\915\protected\models\UserLoginLog.php (33)
+in F:\apps\915\protected\components\UserIdentity.php (52)
+in F:\apps\915\protected\models\LoginForm.php (57)
+2014/06/12 08:49:59 [warning] [application] Failed to set unsafe attribute "login_ip" of "UserLoginLog".
+in F:\apps\915\protected\models\UserLoginLog.php (33)
+in F:\apps\915\protected\components\UserIdentity.php (52)
+in F:\apps\915\protected\models\LoginForm.php (57)
+2014/06/12 08:49:59 [warning] [application] Failed to set unsafe attribute "user_agent" of "UserLoginLog".
+in F:\apps\915\protected\models\UserLoginLog.php (33)
+in F:\apps\915\protected\components\UserIdentity.php (52)
+in F:\apps\915\protected\models\LoginForm.php (57)
+2014/06/12 08:50:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "css/form.css"。' in F:\apps\915\framework\web\CWebApplication.php:286
+Stack trace:
+#0 F:\apps\915\framework\web\CWebApplication.php(141): CWebApplication->runController('css/form.css')
+#1 F:\apps\915\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 F:\apps\915\htdocs\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/form.css
+HTTP_REFERER=http://127.0.0.2/index.php
+---
