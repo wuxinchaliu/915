@@ -49,7 +49,8 @@ class UserIdentity extends CUserIdentity
         }
         $userId = $users == null ? null : $users->id;
         $loginResult = self::ERROR_NONE == $this->errorCode;
-        UserLoginLog::addLoginLog(array('user_id'=>$userId,'username'=>$this->username,'login_result'=>''));
+        UserLoginLog::addLoginLog(array('user_id'=>$userId,'username'=>$this->username,'login_result'=>$loginResult,'login_time'=>$timestamp));
 
+        return $this->errorCode == self::ERROR_NONE;
 	}
 }
