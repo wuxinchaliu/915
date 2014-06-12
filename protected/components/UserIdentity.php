@@ -25,7 +25,7 @@ class UserIdentity extends CUserIdentity
         $users = User::model()->findByAttributes(array('username' => $this->username), array('select' => 'id, username, password, salt, fail_login_count, fail_login_time'));
 
         $timestamp = time();
-        if($users->username === null){
+        if($users === null){
             $this->errorCode = self::ERROR_USERNAME_INVALID;
         }
         //用户超过登录次数之后，一天以后才可以登录
