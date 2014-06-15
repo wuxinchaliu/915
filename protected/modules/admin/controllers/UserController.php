@@ -9,99 +9,31 @@ class UserController extends Controller
 {
     public $defaultController = 'login';
  //   public  $layout = 'application.modules.admin.views.layouts.column1';
-    public function actions()
-    {
-        return array(
-            'captcha' => array(
-                'class' => 'CCaptchaAction',
-                'backColor' => 0xFFFFFF,
-                'maxLength' => 4,
-                'minLength' => 4,
-                'height' => rand(48, 50),
-                'width' => 100,
-                'foreColor' => 0x4098e6,
-            ),
-            'page' => array(
-                'class' => 'CViewAction'
-            )
-        );
-    }
 
     /**
-     * accessRules
-     * 对匿名说no
+     * list system user
      */
-    public function accessRules()
+    public function actionList()
     {
-        return array(
-            array(
-                'allow',
-                'actions' => array('login','captcha'),
-                'users' => array('?')
-            ),
-            array(
-                'deny',
-                'users' => array('?')
-            )
-        );
-    }
-
-    /**
-     * This is the default 'index' action that is invoked
-     * when an action is not explicitly requested by users.
-     */
-    public function actionIndex()
-    {
-        if (yii::app()->user->isGuest){
-            $this->redirect('/user/login');
+        $model = new User('search');
+        $model->unsetAttributes();
+        if(isset($_GET['User'])){
+            $model->attributes = $_GET['User'];
         }
-        $this->renderPartial('frame');
+        $this->render('list',array('model'=>$model));
     }
 
     /**
-     * error handle
-     * this is action to user to deals with handle exceptions
+     * add system user
      */
-    public function actionErrors()
+    public function actionAdd()
     {
-        if($error = yii::app()->errorHandle->error){
-            if(yii::app()->request->isAjax){
-                echo $error['message'];
-            } else {
-                echo $this->render('error', $error);
-            }
+        $model = new User();
+        if(isset($_POST['User'])){
+
         }
+        $this->render('add',array('model'=>$model));
     }
-
-    /**
-     * this is render login page
-     */
-    public function actionLogin()
-    {
-        if(!yii::app()->user->isGuest){
-            $this->redirect(yii::app()->homeUrl);
-        }
-        $model = new LoginForm();
-        $model->scenario = 'login';
-
-        if(isset($_POST['LoginForm'])){
-            $model->attributes = $_POST['LoginForm'];
-            if($model->validate() && $model->login()){
-                $this->redirect(yii::app()->homeUrl);
-            }
-        }
-        $this->render('login', array('model' => $model));
-    }
-
-    /**
-     *
-     */
-    public function actionLogout()
-    {
-        yii::app()->user->logout();
-        $this->redirect('login');
-    }
-
     /**
      * edit user
      */

@@ -40,6 +40,9 @@ return array(
         ),
         'urlManager'=>array(
             'urlFormat'=>'path',
+            'caseSensitive'=>true, // 是否区分大小写
+            'showScriptName'=>false,	// 显示脚本文件名
+            'useStrictParsing'=>false,
             'rules'=>array(
                 '<controller:\w+>/<id:\d+>'=>'<controller>/view',
                 '<controller:\w+>/<action:\w+>/<id:\d+>'=>'<controller>/<action>',
