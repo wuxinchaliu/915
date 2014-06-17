@@ -5,7 +5,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
     </button>
-    <a class="navbar-brand" href="index">IT 915</a>
+    <a class="navbar-brand" href="index">IT915--后台管理系统</a>
 </div>
 <!-- /.navbar-header -->
 
@@ -17,9 +17,9 @@
         <i class="fa fa-user fa-fw"></i>  <i class="fa fa-caret-down"></i>
     </a>
     <ul class="dropdown-menu dropdown-user">
-        <li><a href="#"><i class="fa fa-user fa-fw"></i> </a>
+        <li><a href="/admin/user/view/"><i class="fa fa-user fa-fw"></i> <?php echo Yii::app()->user->id;?></a>
         </li>
-        <li><a href="#"><i class="fa fa-gear fa-fw"></i> 设置用户信息</a>
+        <li><a href="/admin/user/updatePassword"><i class="fa fa-gear fa-fw"></i> 修改密码</a>
         </li>
         <li class="divider"></li>
         <li><a href="/admin/site/logout"><i class="fa fa-sign-out fa-fw"></i> 退出 </a>

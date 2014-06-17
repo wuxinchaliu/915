@@ -10,6 +10,7 @@ return array(
     'name'=>'915',
     'charset'=>'utf-8',
     'language'=>'zh_cn',
+    'defaultController'=>'site/index',
     // preloading 'log' component
     'preload'=>array('log'),
 

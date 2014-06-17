@@ -98,8 +98,4 @@ class SiteController extends Controller
         $this->redirect('login');
     }
 
-    public function actionMain()
-    {
-        $this->render('main');
-    }
 }
