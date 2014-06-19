@@ -22,4 +22,8 @@ class Controller extends CController
 	 */
 	public $breadcrumbs=array();
 
+    public function actionErrors()
+    {
+        $this->render('/site/error');
+    }
 }

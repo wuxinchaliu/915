@@ -16,15 +16,8 @@
                 <a href="/admin/user/list"><i class="fa fa-dashboard fa-fw" target="mainFrame"></i> 用户管理</a>
             </li>
             <li>
-                <a href="#"><i class="fa fa-bar-chart-o fa-fw"></i> 分类管理<span class="fa arrow"></span></a>
-                <ul class="nav nav-second-level">
-                    <li>
-                        <a href="flot.html">Flot Charts</a>
-                    </li>
-                    <li>
-                        <a href="morris.html">Morris.js Charts</a>
-                    </li>
-                </ul>
+                <a href="/admin/category/list"><i class="fa fa-bar-chart-o fa-fw"></i> 分类管理</a>
+
                 <!-- /.nav-second-level -->
             </li>
             <li>
