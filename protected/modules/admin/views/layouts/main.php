@@ -8,7 +8,7 @@
     <meta name="author" content="qilin">
 
     <!--link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/static/css/bootstrap.css" /-->
-    <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/static/bootstrap/css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/static/bootstrap/css/bootstrap.min.css" />
     <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/static/font-awesome/css/font-awesome.css" />
     <link href="<?php echo Yii::app()->request->baseUrl; ?>/static/css/sb-admin.css" rel="stylesheet">
 </head>
