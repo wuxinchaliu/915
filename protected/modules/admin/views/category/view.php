@@ -20,4 +20,5 @@ $this->breadcrumbs = array(
        'url'
     ),
 ));
+echo CHtml::link('所有分类', array('list'),array('class'=>'btn btn-small btn-primary'));
 ?>

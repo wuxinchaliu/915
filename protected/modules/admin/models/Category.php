@@ -54,17 +54,14 @@ class Category extends CActiveRecord{
     /*
      * 获得顶级分类
      */
-    public static function getTopCategory()
+    public static function getCategoryById($cid=0)
     {
-        $cate = new Category();
-        $arr = array();
-        $topCate = $cate->findAll('parent_id=0',array('select'=>'cate_name,cid'));
-        if($topCate){
-            foreach($topCate as $val){
-                $arr[$val['cid']] = $val['cate_name'];
-            }
+        $row = array();
+        $cates = Category::model()->findAll('parent_id=:parent_id',array(':parent_id'=>$cid));
+        foreach($cates as $obj){
+            $row[$obj->cid] = $obj->cate_name;
         }
-        return array_merge(array(0=>'全部分类'), $arr);
+        return $row;
     }
 
     /**

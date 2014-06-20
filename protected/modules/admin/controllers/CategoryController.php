@@ -16,7 +16,7 @@ class CategoryController extends Controller
     public function actionList()
     {
         $model = new Category('search');
-        $cate = $model->getTopCategory();
+        //$cate = $model->getTopCategory();
         //print_r($cate);exit;
         $model->unsetAttributes();
         if(isset($_GET['Category'])){
@@ -31,6 +31,8 @@ class CategoryController extends Controller
     public function actionAdd()
     {
         $model = new Category('insert');
+        $dd = $model::getCategoryById(0);
+        //print_r($dd);exit;
         if(isset($_POST['Category'])){
             $model->attributes = $_POST['Category'];
 
@@ -64,6 +66,7 @@ class CategoryController extends Controller
 
         if(isset($_POST['Category'])){
             $model->attributes = $_POST['Category'];
+            print_r($model->parent_id);exit;
             if($model->save()){
                 $this->redirect('/admin/category/list');
             }

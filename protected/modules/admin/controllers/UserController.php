@@ -52,7 +52,7 @@ class UserController extends Controller
     public function actionUpdate()
     {
         $model = new LoginForm();
-        $this->render('edit', array('model'=>$model));
+        $this->render('update', array('model'=>$model));
     }
     protected function beforeAction($action)
     {

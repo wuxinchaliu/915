@@ -6,3 +6,6 @@ $this->breadcrumbs = array(
 $this->pageTitle = '编辑分类';
 ?>
 <h2>编辑分类</h2>
+<?php
+$this->renderPartial('__form', array('model'=>$model));
+?>
