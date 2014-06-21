@@ -7,6 +7,7 @@
 
 class Category extends CActiveRecord{
 
+    public $cate_list;
     /**
      *
      */
@@ -47,7 +48,8 @@ class Category extends CActiveRecord{
             'is_enable' => '是否有效',
             'sort' => '排序',
             'url' => '外部链接',
-            'parent_id' => '选择分类',
+            'parent_id' => '分类父id',
+            'cate_list' => '选择分类'
         );
     }
 

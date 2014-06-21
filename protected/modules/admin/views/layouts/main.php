@@ -11,6 +11,7 @@
     <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/static/bootstrap/css/bootstrap.min.css" />
     <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/static/font-awesome/css/font-awesome.css" />
     <link href="<?php echo Yii::app()->request->baseUrl; ?>/static/css/sb-admin.css" rel="stylesheet">
+    <script src="<?php echo Yii::app()->request->baseUrl; ?>/static/js/jquery-1.10.2.js"></script>
 </head>
 
 <body>
@@ -28,7 +29,7 @@
     </div>
 
 
-<script src="<?php echo Yii::app()->request->baseUrl; ?>/static/js/jquery-1.10.2.js"></script>
+
 <script src="<?php echo Yii::app()->request->baseUrl; ?>/static/bootstrap/js/bootstrap.min.js"></script>
 <script src="<?php echo Yii::app()->request->baseUrl; ?>/static/js/plugins/metisMenu/jquery.metisMenu.js"></script>
 <script src="<?php echo Yii::app()->request->baseUrl; ?>/static/js/sb-admin.js"></script>

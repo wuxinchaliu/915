@@ -17,8 +17,8 @@ $form = $this->beginWidget('bootstrap.widgets.TbActiveForm', array(
     'action'=>'/admin/category/list',
     'htmlOptions'=>array('class'=>'well'),
 ));
-echo $form->textFieldRow($model, 'cate_name',array('class'=>'form-control','style'=>'width:150px;margin-right:10px;'));
-
+echo $form->textFieldRow($model, 'cate_name',array('class'=>'form-control','style'=>'width:150px;'))."\n\n";
+echo $form->dropDownListRow($model, 'parent_id', $model::getCategoryById(),array('empty'=>'所有分类','class'=>'form-control','style'=>'width:150px','label'=>false))."\n\n";
 $this->widget('bootstrap.widgets.TbButton', array('buttonType'=>'submit', 'label'=>'搜索','htmlOptions'=>array('class'=>'btn-default')));
 echo CHtml::link('添加分类', array('add'),array('class'=>'btn btn-small btn-primary pull-right'));
 $this->endWidget();

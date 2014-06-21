@@ -16,8 +16,7 @@ class CategoryController extends Controller
     public function actionList()
     {
         $model = new Category('search');
-        //$cate = $model->getTopCategory();
-        //print_r($cate);exit;
+
         $model->unsetAttributes();
         if(isset($_GET['Category'])){
             $model->attributes = $_GET['Category'];
@@ -66,7 +65,8 @@ class CategoryController extends Controller
 
         if(isset($_POST['Category'])){
             $model->attributes = $_POST['Category'];
-            print_r($model->parent_id);exit;
+            $model->parent_id = intval($_POST['Category']['parent_id']);
+
             if($model->save()){
                 $this->redirect('/admin/category/list');
             }
@@ -82,5 +82,24 @@ class CategoryController extends Controller
         } else {
             return true;
         }
+    }
+
+    public function actionGetChildCategory()
+    {
+        $cid = Yii::app()->request->getPost('cid');
+        if(intval($cid)>0){
+            $data = Category::getCategoryById($cid);
+            if($data){
+                echo json_encode($data);
+            }else{
+                $data = array('status'=>0);
+                echo json_encode($data);exit;
+            }
+        } else{
+            $data = array('status'=>0);
+            echo json_encode($data);exit;
+        }
+
+
     }
 } 
