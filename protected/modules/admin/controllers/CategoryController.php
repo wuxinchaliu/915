@@ -31,10 +31,10 @@ class CategoryController extends Controller
     {
         $model = new Category('insert');
         $dd = $model::getCategoryById(0);
-        //print_r($dd);exit;
         if(isset($_POST['Category'])){
             $model->attributes = $_POST['Category'];
-
+            $model->parent_id = intval($_POST['Category']['parent_id']);
+            $model->second_id = isset($_POST['Category']['second_id']) ? intval($_POST['Category']['second_id']) : 0;
             if($model->save()){
                 $this->redirect(array('view', 'id' => $model->cid));
             }
@@ -66,7 +66,7 @@ class CategoryController extends Controller
         if(isset($_POST['Category'])){
             $model->attributes = $_POST['Category'];
             $model->parent_id = intval($_POST['Category']['parent_id']);
-
+            $model->second_id = isset($_POST['Category']['second_id']) ? intval($_POST['Category']['second_id']) : 0;
             if($model->save()){
                 $this->redirect('/admin/category/list');
             }
@@ -75,6 +75,11 @@ class CategoryController extends Controller
             'model'=>$model
         ));
     }
+
+    /**
+     * @param $action
+     * @return bool
+     */
     protected function beforeAction($action)
     {
         if (Yii::app()->user->getIsGuest()) {
@@ -99,7 +104,17 @@ class CategoryController extends Controller
             $data = array('status'=>0);
             echo json_encode($data);exit;
         }
-
-
+    }
+    public function actionDelete($id)
+    {
+        if(Yii::app()->request->isPostRequest)
+        {
+            $this->loadModel($id)->delete();
+            if(!isset($_GET['ajax'])) {
+                $this->redirect('/admin/category/list');
+            }
+        } else {
+            throw new CHttpException(400,'Invalid request. Please do not repeat this request again.');
+        }
     }
 } 

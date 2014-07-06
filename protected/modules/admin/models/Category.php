@@ -7,7 +7,6 @@
 
 class Category extends CActiveRecord{
 
-    public $cate_list;
     /**
      *
      */
@@ -31,7 +30,7 @@ class Category extends CActiveRecord{
         // NOTE: you should only define rules for those attributes that
         // will receive user inputs.
         return array(
-            array('cate_name,cate_desc,is_enable', 'required', 'on' => 'insert, update'),
+            array('cate_name,parent_id,cate_desc,is_enable', 'required', 'on' => 'insert, update'),
             array('cate_name', 'unique'),
             array('url', 'length', 'max'=>'250'),
             array('cate_name,cate_desc,parent_id', 'safe', 'on' => 'search'),
@@ -48,8 +47,8 @@ class Category extends CActiveRecord{
             'is_enable' => '是否有效',
             'sort' => '排序',
             'url' => '外部链接',
-            'parent_id' => '分类父id',
-            'cate_list' => '选择分类'
+            'parent_id' => '顶级分类',
+            'second_id' => '二级分类'
         );
     }
 
@@ -66,6 +65,10 @@ class Category extends CActiveRecord{
         return $row;
     }
 
+    public static function getAllCategory($cid=0)
+    {
+
+    }
     /**
      *
      */

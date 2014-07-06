@@ -18,7 +18,8 @@ $form = $this->beginWidget('bootstrap.widgets.TbActiveForm', array(
     'htmlOptions'=>array('class'=>'well'),
 ));
 echo $form->textFieldRow($model, 'cate_name',array('class'=>'form-control','style'=>'width:150px;'))."\n\n";
-echo $form->dropDownListRow($model, 'parent_id', $model::getCategoryById(),array('empty'=>'所有分类','class'=>'form-control','style'=>'width:150px','label'=>false))."\n\n";
+echo $form->dropDownListRow($model, 'parent_id', $model::getCategoryById(),
+        array('onchange'=>'getChildCategory(this.value,this)','empty'=>'所有分类','class'=>'span5','style'=>'width:150px','label'=>false))."\n\n";
 $this->widget('bootstrap.widgets.TbButton', array('buttonType'=>'submit', 'label'=>'搜索','htmlOptions'=>array('class'=>'btn-default')));
 echo CHtml::link('添加分类', array('add'),array('class'=>'btn btn-small btn-primary pull-right'));
 $this->endWidget();
@@ -60,6 +61,38 @@ $this->widget('bootstrap.widgets.TbGridView',array(
         ),
     ),
 ));
-
-
 ?>
+<script>
+    $(function(){
+        $("#cateTop").change(function(){
+            var topValue = $(this).val();
+
+            $(this).after('<h1>d</h1>');
+        });
+
+
+    })
+
+    function getChildCategory(parent_id,obj)
+    {
+        $.ajax({
+            'url': '/admin/category/getChildCategory',
+            'type':'post',
+            'data':'cid='+parent_id,
+            'dataType':'json'
+        })
+            .done(function(msg){
+
+                if( msg.status != 0){
+                    var html='<select id="cateChild_'+parent_id+'" class="span5" style="width:150px;margin-left: 10px;" onchange=\'getChildCategory(this.value,this)\'>';
+                    $.each(msg, function(index, val){
+                        html+="<option value='"+index+"'>"+val+"</option>";
+                    });
+                    html+="</select>";
+                    $(obj).after(html);
+                }else{
+                    $("select[id^='cateChild_']").remove();
+                }
+            })
+    }
+</script>
